@@ -3,31 +3,9 @@ import usestyles from './styles';
 import { useState } from 'react';
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
-const List = () => {
+const List = ({places}) => {
     const classes = usestyles();
-    const places = [
-        {name: 'first'},
-        {name: 'second'},
-        {name: 'third'},
-        {name: 'fourth'},
-        {name: 'fifth'},
-        {name: 'sixth'},
-        {name: 'seventh'},
-        {name: 'first'},
-        {name: 'second'},
-        {name: 'third'},
-        {name: 'fourth'},
-        {name: 'fifth'},
-        {name: 'sixth'},
-        {name: 'seventh'},
-        {name: 'first'},
-        {name: 'second'},
-        {name: 'third'},
-        {name: 'fourth'},
-        {name: 'fifth'},
-        {name: 'sixth'},
-        {name: 'seventh'},
-    ];
+
     const [type, setType] = useState('restaurants');
     const [rating,setRating] = useState('');
 
